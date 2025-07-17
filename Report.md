@@ -1,6 +1,4 @@
-Great question, Rishi. Since you haven’t started building the project yet, the `report.md` (or final project report) should **act as a living document** — basically like a blueprint + logbook. You can absolutely start it **before coding**, and keep updating it as your team progresses.
 
-Here’s how to structure your `report.md` **even before starting the actual development**, while covering all the submission points and GitLab stuff:
 
 ---
 

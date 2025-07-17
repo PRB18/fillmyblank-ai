@@ -42,6 +42,8 @@ These inputs will be used to build an evolving, community-driven prompt corpus f
 ---
 ## 🔹 Folder Structure
 
+<pre>
+```bash
 FillMyBlank.ai/
 ├── .gitignore
 ├── LICENSE
@@ -66,7 +68,7 @@ FillMyBlank.ai/
 │   │   ├── word_unscramble.py
 │   │   └── meme_caption.py
 │   ├── utils/
-│   │   ├── ai_api.py              # Uses open-source LLMs (e.g., Hugging Face)
+│   │   ├── ai_api.py              
 │   │   └── helpers.py
 │   ├── static/
 │   │   └── styles.css
@@ -84,6 +86,8 @@ FillMyBlank.ai/
     ├── architecture_diagram.png
     ├── er_model.png
     └── usage_guide.md
+```
+</pre>
 
 ---
 

@@ -43,7 +43,7 @@ These inputs will be used to build an evolving, community-driven prompt corpus f
 ## 🔹 Folder Structure
 
 <pre>
-```bash
+
 FillMyBlank.ai/
 ├── .gitignore
 ├── LICENSE
@@ -86,7 +86,7 @@ FillMyBlank.ai/
     ├── architecture_diagram.png
     ├── er_model.png
     └── usage_guide.md
-```
+
 </pre>
 
 ---

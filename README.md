@@ -1,4 +1,4 @@
-# 🧠 FillMyBlank.exe  
+# 🧠 FillMyBlank.ai  
 ### 🚀 By Team LLMao  
 Sherlyn, Mahesh, Bhushan, Arshia, Rishi  
 
@@ -8,7 +8,7 @@ Sherlyn, Mahesh, Bhushan, Arshia, Rishi
 
 ## 🎯 Project Summary
 
-**FillMyBlank.exe** is a fun, fast-paced, and socially engaging web application built for Gen-Z users who crave interactivity, humour, and competition. The platform features **a set of meme-style AI challenges** — from fill-in-the-blanks to vibe-matching and meme-completion — where users test their wit, creativity, and timing.
+**FillMyBlank.ai** is a fun, fast-paced, and socially engaging web application built for Gen-Z users who crave interactivity, humour, and competition. The platform features **a set of meme-style AI challenges** — from fill-in-the-blanks to vibe-matching and meme-completion — where users test their wit, creativity, and timing.
 
 Our unique twist? The AI doesn't just sit back — it actively judges the responses, scores them, and adapts to user humor over time. As users play, **we collect sentence-level data enriched with metadata** to fine-tune our open-source language model for better contextual understanding of Gen-Z tone, humor, and vibes.
 

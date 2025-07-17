@@ -40,6 +40,7 @@ Each prompt submitted by the community will include:
 These inputs will be used to build an evolving, community-driven prompt corpus for future generations of FillMyBlank challenges.
 
 ---
+## 🔹 Folder Structure
 
 FillMyBlank.ai/
 ├── .gitignore
@@ -65,7 +66,7 @@ FillMyBlank.ai/
 │   │   ├── word_unscramble.py
 │   │   └── meme_caption.py
 │   ├── utils/
-│   │   ├── ai_api.py  # using open-source LLMs (e.g., Hugging Face)
+│   │   ├── ai_api.py              # Uses open-source LLMs (e.g., Hugging Face)
 │   │   └── helpers.py
 │   ├── static/
 │   │   └── styles.css

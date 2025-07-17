@@ -1,5 +1,3 @@
-
-
 ---
 
 ## 📄 `report.md` — FillMyBlank.ai Project Report

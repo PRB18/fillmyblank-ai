@@ -50,16 +50,16 @@ Current LLMs lack regional humor, sarcasm understanding, and meme context. Our a
 
 ---
 
-### 5. Tech Stack
+## 🔹 Tech Stack
 
-| Layer        | Tools / Tech                             |
-| ------------ | ---------------------------------------- |
-| Frontend     | HTML, Tailwind CSS, JavaScript, React    |
-| Backend      | Flask / FastAPI                          |
-| Database     | SQLite (local), PostgreSQL (if deployed) |
-| AI API       | Open-source models via Hugging Face      |
-| Hosting      | GitLab Pages / Streamlit / Railway       |
-| Version Ctrl | GitLab with issues, MR, and branches     |
+| Component        | Technology Used                      |
+|------------------|--------------------------------------|
+| **Frontend**      | Streamlit (Python-based UI)          |
+| **Backend**       | Python (FastAPI or Flask - planned)  |
+| **AI Model**      | OpenRouter API (OpenAI/Groq backend) |
+| **Version Control** | GitLab                              |
+| **Deployment**    | Hugging Face Spaces (or Render)      |
+| **Team Workflow** | GitLab Issues, Commits, Merge Requests |
 
 ---
 

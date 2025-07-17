@@ -1,119 +1,136 @@
-# 🧠 FillMyBlank.ai  
-### 🚀 By Team LLMao  
-Sherlyn, Mahesh, Bhushan, Arshia, Rishi  
+# FillMyBlank.ai
 
-> _"An AI-Powered Challenge Arena for the Short-Attention-Span Generation."_
+**FillMyBlank.ai** is an AI-powered web app that challenges users to complete memes, tweets, or short quotes using their creativity. The AI provides real-time feedback, scores, and even generates new challenges — combining fun, wit, and intelligence in a gamified social platform.
 
----
+## 🔹 Team Details
 
-## 🎯 Project Summary
+- **Team Name**: LLMao  
+- **Members**:  
+  - Sherlyn  
+  - Mahesh  
+  - Bhushan  
+  - Arshia  
+  - Rishi  
 
-**FillMyBlank.ai** is a fun, fast-paced, and socially engaging web application built for Gen-Z users who crave interactivity, humour, and competition. The platform features **a set of meme-style AI challenges** — from fill-in-the-blanks to vibe-matching and meme-completion — where users test their wit, creativity, and timing.
+## 🔹 Project Overview
 
-Our unique twist? The AI doesn't just sit back — it actively judges the responses, scores them, and adapts to user humor over time. As users play, **we collect sentence-level data enriched with metadata** to fine-tune our open-source language model for better contextual understanding of Gen-Z tone, humor, and vibes.
+FillMyBlank.ai is designed to promote creative expression using generative AI. It focuses on language, culture, and community engagement through humor and wit. The user is shown incomplete or blank memes, quotes, or short tweets and challenged to complete them in a meaningful or funny way.
 
----
-
-## 💡 Why This?
-
-Most LLM hackathon projects are just chatbots in disguise. We're different.  
-We focused on:
-- **Engagement over utility**
-- **Humor over formality**
-- **Data creation over consumption**
-
-We aim to **combat attention fatigue** and make AI feel fun and approachable again — all while **collecting usable, fresh data** to fine-tune an open-source model.
+The application evaluates the response, provides feedback, and updates the leaderboard accordingly.
 
 ---
 
-## 🎮 Core Features
+## 🔹 Core Features
 
-| 🧪 Challenge Type      | Description |
-|------------------------|-------------|
-| ✍️ Fill in the Blank   | User completes a quirky or sarcastic sentence. AI rates it based on humor, tone, and relevance. |
-| 📸 Meme Completion     | User writes captions for partially completed memes. AI ranks wittiness. |
-| 🧠 Vibe Match          | Match a sentence to the correct vibe (funny, sad, sarcastic). AI checks alignment. |
-| 🤖 Judge's Verdict     | AI gives feedback, humor score, and leaderboard placement for each challenge.|
+### 1. Interactive Challenges  
+Users receive fill-in-the-blank prompts in the form of memes, tweets, or short quotes.
+
+### 2. Real-time AI Feedback  
+The AI rates responses based on humor, creativity, and relevance.
+
+### 3. Leaderboard  
+Scores are tracked in real-time and shown to encourage competitive fun.
+
+### 4. Content Generation  
+The AI can create new incomplete sentences using templates and style transfer.
+
+### 5. User Login System *(In Progress)*  
+We plan to introduce a secure user login page to track individual performance and history.
+
+### 6. Geo-based Trend Analysis *(Planned)*  
+If users give consent, their location (geo-coordinates) will be collected to analyze regional trends in humor and creativity. This feature will be entirely optional.
+
+### 7. Corpus Categorization  
+Each prompt submitted by the community will include:
+- A **title**
+- A **description**
+- A **category** (e.g., humor, politics, pop culture)
+
+These inputs will be used to build an evolving, community-driven prompt corpus for future generations of FillMyBlank challenges.
 
 ---
 
-## 📦 Tech Stack
+## 🔹 Tech Stack
 
-| Layer       | Tech Used |
-|-------------|-----------|
-| 👩‍🎨 Frontend   | Streamlit (for rapid prototyping), Tailwind CSS (if needed), HTML/CSS |
-| 🧠 AI Backend | Sentence Transformers (`all-MiniLM-L6-v2`), Open Source LLMs (`phi`, `gemma`, `mistral`) |
-| 🗃️ Data Layer  | JSONL / SQLite (for corpus and response metadata storage) |
-| 🚀 Hosting    | Hugging Face Spaces / Streamlit Cloud |
-| 🛠️ DevOps     | GitLab CI/CD, Python venv, Docker (optional) |
+| Component        | Technology Used                      |
+|------------------|--------------------------------------|
+| **Frontend**      | Streamlit (Python-based UI)          |
+| **Backend**       | Python (FastAPI or Flask - planned)  |
+| **AI Model**      | OpenRouter API (OpenAI/Groq backend) |
+| **Version Control** | GitLab                              |
+| **Deployment**    | Hugging Face Spaces (or Render)      |
+| **Team Workflow** | GitLab Issues, Commits, Merge Requests |
 
 ---
 
-## 🔐 Data Handling & Structure
+## 🔹 Corpus Submission Details
 
-We collect the following metadata along with each user submission:
+We plan to collect a categorized prompt dataset from users and ourselves. Each entry will have:
+- **Title**: A brief heading of the prompt  
+- **Description**: Detailed context or backstory  
+- **Category**: The theme of the prompt (e.g., Satire, Love, News, Pop, GenZ)
 
-| Field             | Description |
-|------------------|-------------|
-| `user_id`         | Anonymous user identifier (hashed or UUID) |
-| `timestamp`       | Time of submission (UTC) |
-| `geo_coordinates` | Optional latitude and longitude (with user consent) |
-| `title`           | Title of the user-generated challenge or meme |
-| `description`     | Short description/context of the prompt |
-| `category`        | Type of challenge: `"Blank"`, `"Meme"`, or `"Vibe"` |
-| `response`        | User-submitted text |
-| `ai_score`        | AI-generated humor/context relevance score |
-| `judge_feedback`  | Qualitative feedback given by the AI |
+This structure will allow us to analyze and use prompts more intelligently in the future — for search, filtering, and personalization.
 
-> Data is stored in `.jsonl` format and anonymized to protect user privacy.
+---
 
-### 📝 Sample Data Entry
+## 🔹 Progress & Versioning
 
-```json
-{
-  "user_id": "a3d9e90e-39f3-4bb1-944c-bc14c2b1d62a",
-  "timestamp": "2025-07-17T10:24:00Z",
-  "geo_coordinates": {"lat": 17.385044, "lon": 78.486671},
-  "title": "Meme Caption: Elon at Mars",
-  "description": "Elon Musk landing on Mars meme - fill in the final dialogue",
-  "category": "Meme",
-  "response": "When you realize you left the stove on at Earth.",
-  "ai_score": 8.2,
-  "judge_feedback": "Nice twist! Sarcastic and relevant to the meme."
-}
-```
-### 🧠 Model Usage
+We are actively using **GitLab** for project management:
+- Each feature is tracked using GitLab Issues
+- Commits follow semantic structure
+- Merge Requests are reviewed collaboratively
 
-We use Sentence Transformers to compute semantic similarity and humor scoring via cosine similarity. Responses may also be labeled and used in future fine-tuning runs (classification tasks like "Funny", "Mid", "Dead").
+We will add changelogs and version tagging once the MVP is finalized.
 
-All AI models used are fully open-source and comply with hackathon rules (no closed APIs like GPT-4).
+---
 
-📈 Long-Term Vision
+## 🔹 Future Plans
 
-    Build a public humor dataset from anonymous user input (CC0).
+- Add login system with session tracking
+- Enable multiplayer challenge mode
+- Add support for Telugu and other regional languages
+- Create mobile-first UI using React or Flutter (Phase 2)
+- Integrate personalized meme generation using image captioning models
 
-    Fine-tune a humor-aligned open-source LLM using HuggingFace PEFT.
+---
 
-    Support multimodal challenges (images + captions).
+## 🔹 Contributors' Roles
 
-    Enable offline mode for privacy-conscious users.
+| Member   | Role             | Contributions |
+|----------|------------------|---------------|
+| Sherlyn  | UI/UX Designer   | Streamlit layout, styling |
+| Mahesh   | Backend Lead     | Flask API design, model integration |
+| Bhushan  | Prompt Engineer  | Corpus design, category strategy |
+| Arshia   | Feature Developer| AI feedback system |
+| Rishi    | Project Lead     | Architecture, README, issue tracking, integration |
 
-🤝 Contribution Roles
-Name	Role
-Rishi	AI System Design, Prompt Engineering
-Sherlyn	UI/UX Design, Challenge Ideation
-Mahesh	Frontend Development
-Arshia	Dataset Handling, User Flow Design
-Bhushan	Model Integration, Backend Logic
+---
 
-🌍 License
+## 🔹 Ethical Statement
 
-This project is licensed under the MIT License.
-User-generated content is collected under the Creative Commons Zero (CC0) license for public domain AI training purposes.
+All AI-generated responses and feedback are filtered to avoid hate speech, offensive content, or misinformation. Geo-location tracking will be strictly opt-in and anonymized for trend purposes only.
 
+---
 
-🧠 Final Words
+## 🔹 Contact
 
-This isn’t your average chatbot.
-It’s "FillMyBlank.ai" — where creativity meets chaos, and AI learns to meme.
+- For issues, ideas, or collaboration requests, open an Issue in this repo or contact any team member directly through GitLab.
+- For prompt dataset contributions, please fill out the Google Form (to be shared).
 
+---
+
+## 🔹 License
+
+This project is licensed under **MIT License**. See `LICENSE.md` for full details.
+
+---
+
+## 🔹 Deployment
+
+- The project will be deployed to **Hugging Face Spaces** or **Render** after MVP completion.
+- A public URL will be shared here once the app is live.
+
+---
+
+> This README represents our current vision and implementation plan for FillMyBlank.ai, submitted as part of the hackathon project under Swecha/WikiVerse.

@@ -34,10 +34,10 @@ Scores are tracked in real-time and shown to encourage competitive fun.
 ### 4. Content Generation  
 The AI can create new incomplete sentences using templates and style transfer.
 
-### 5. User Login System *(In Progress)*  
+### 5. User Login System 
 We plan to introduce a secure user login page to track individual performance and history.
 
-### 6. Geo-based Trend Analysis *(Planned)*  
+### 6. Geo-based Trend Analysis
 If users give consent, their location (geo-coordinates) will be collected to analyze regional trends in humor and creativity. This feature will be entirely optional.
 
 ### 7. Corpus Categorization  

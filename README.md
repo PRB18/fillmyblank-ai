@@ -1,141 +1,106 @@
+# 🧠 FillMyBlank.exe  
+### 🚀 By Team LLMao  
+Sherlyn, Mahesh, Bhushan, Arshia, Rishi  
 
-```markdown
-# 🧠 FillMyBlank.AI  
-### _"AI-powered chaotic challenge engine for attention-deficit Gen Z brains"_  
-🚀 Built by Team **LLMao** — Sherlyn, Mahesh, Bhushan, Arshia & Rishi
-
----
-
-## 🎯 About the Project
-
-**FillMyBlank.AI** is not your regular boring AI app. It’s a fun, fast-paced, chaotic mini-game suite where users face short, quirky challenges like:
-
-- 🧩 **Fill in the Blank**  
-- 🎤 **Meme Response Generator**  
-- 🤔 **1-Word Answer Judgment**  
-- 🧠 **Weird Prompt Completion**
-- 🧱 **Finish the Story**
-
-Users type their response, and our **Open-Source AI Model** judges it instantly based on humor, relevance, absurdity, or emotional tone.
-
-> It’s like ChatGPT but on Red Bull. ⚡  
-> It’s like Duolingo’s evil twin. 😈  
-> It’s AI-powered chaos. 💥
+> _"An AI-Powered Challenge Arena for the Short-Attention-Span Generation."_
 
 ---
 
-## 🧪 Why This?
+## 🎯 Project Summary
 
-👀 Attention spans are shrinking, and people crave fast feedback and gamified vibes.  
-**FillMyBlank.AI** makes AI *fun*, *interactive*, and *data-generative*. Each interaction is stored (anonymized) and helps us improve and fine-tune our models.
+**FillMyBlank.exe** is a fun, fast-paced, and socially engaging web application built for Gen-Z users who crave interactivity, humour, and competition. The platform features **a set of meme-style AI challenges** — from fill-in-the-blanks to vibe-matching and meme-completion — where users test their wit, creativity, and timing.  
 
-- 🧠 Collects user-generated micro-dataset for fine-tuning
-- 🤖 Helps train domain-specific language models in a fun way
-- 🎯 Keeps the Gen Z audience engaged and coming back
+Our unique twist? The AI doesn't just sit back — it actively judges the responses, scores them, and adapts to user humor over time. As users play, **we collect sentence-level data** to fine-tune our open-source language model for better contextual understanding of Gen-Z tone, humor, and vibes.
 
 ---
 
-## 🛠️ Tech Stack
+## 💡 Why This?
 
-| Layer        | Tools Used                                |
-|-------------|--------------------------------------------|
-| Frontend    | Streamlit (Fast UI for challenges)         |
-| Backend     | Python + FastAPI                           |
-| AI Model    | Sentence-Transformers (e.g., `all-MiniLM`) |
-| Scoring     | Cosine Similarity, Sentiment, Humor Heuristics |
-| Database    | SQLite or Supabase (for storing responses) |
-| Hosting     | Hugging Face Spaces                        |
-| Dataset     | We collect new data on the fly!            |
-| Judging     | Open Source AI (No closed models like GPT) |
+Most LLM hackathon projects are just chatbots in disguise. We're different.  
+We focused on:
+- **Engagement over utility**
+- **Humor over formality**
+- **Data creation over consumption**
+
+We aim to **combat attention fatigue** and make AI feel fun and approachable again — all while **collecting usable, fresh data** to fine-tune an open-source model.
 
 ---
 
-## 🧩 Challenges Description
+## 🎮 Core Features
 
-### 1. **Fill in the Blank**
-> _"Rizz is temporary, but ___ is eternal."_  
-Users complete the sentence and the model scores it based on humor + relevance.
-
----
-
-### 2. **Meme Caption**
-> _User is shown a random meme image, they write a caption. AI rates it._  
-Categories: 💀 Dark, 🐸 Dank, 🧠 Smart
+| 🧪 Challenge Type      | Description |
+|------------------------|-------------|
+| ✍️ Fill in the Blank   | User completes a quirky or sarcastic sentence. AI rates it based on humor, tone, and relevance. |
+| 📸 Meme Completion     | User writes captions for partially completed memes. AI ranks wittiness. |
+| 🧠 Vibe Match          | Match a sentence to the correct vibe (funny, sad, sarcastic). AI checks alignment. |
+| 🤖 Judge's Verdict     | AI gives feedback, humor score, and leaderboard placement for each challenge.|
 
 ---
 
-### 3. **1-Word Vibe Check**
-> _Prompt: "Describe AI in 1 word."_  
-Model checks if it’s meaningful, sarcastic, or deadass nonsense.
+## 📦 Tech Stack
+
+| Layer       | Tech Used |
+|-------------|-----------|
+| 👩‍🎨 Frontend   | Streamlit (for rapid prototyping), Tailwind CSS (if needed for style), HTML/CSS |
+| 🧠 AI Backend | Sentence Transformers (`all-MiniLM-L6-v2`), Open Source LLMs (e.g., `phi`, `gemma`, `mistral`, etc. as fallback for scoring/judgment) |
+| 🗃️ Data Layer  | SQLite or JSONL for collecting prompts and user responses |
+| 🚀 Hosting    | Hugging Face Spaces or Streamlit Cloud |
+| 🛠️ DevOps     | GitLab CI/CD, Python venv, Docker (optional) |
 
 ---
 
-### 4. **Finish the Story**
-> _Prompt: "You enter a haunted Discord server..."_  
-User completes it. AI scores for creativity, tension, flow.
+## 🔐 Data Handling
+
+We collect the following:
+- Anonymous responses per challenge (text only)
+- AI-assigned scores
+- Timestamp (optional)
+
+This data helps us:
+- Fine-tune the AI on humor and context
+- Build a Gen-Z centric response dataset (CC0 open license)
 
 ---
 
-### 5. **Crazy Prompt Response**
-> _Prompt: "Write a tweet Elon Musk would post after eating spicy biryani."_  
-AI scores how likely it could go viral.
+## 🧠 Model Usage
+
+We use **Sentence Transformers** to compute semantic similarity and humor scoring via cosine similarity. Optionally, we may fine-tune using the responses as supervised classification (e.g., "Funny", "Mid", "Dead").
+
+All models used are **open-source** (no GPT-4 or closed APIs), following hackathon guidelines.
 
 ---
 
-## 📊 Data Collection Purpose
+## 📈 Long-Term Vision
 
-We store the best user responses (anonymized) for:
-- Building small domain-specific datasets
-- Training/fine-tuning open-source LLMs
-- Creating a leaderboard + fun stats for users
-- Research on Gen Z language patterns 🧠🔥
-
----
-
-## 💾 Offline + Open Source Compliance
-
-✅ We're not using any closed APIs.  
-✅ Runs locally/offline with small sentence-transformer models.  
-✅ No OpenAI/Gemini/etc.  
-✅ Only open-source models like [sentence-transformers](https://www.sbert.net/)  
-✅ Code + model will be available on GitHub & HF Spaces.
+- Build a **public humor dataset** from anonymous user input.
+- Create a **humor-aligned small LLM** fine-tuned using HuggingFace PEFT.
+- Expand to include **multimodal inputs** (image + text caption rating).
+- Add **offline local mode** for privacy-conscious users.
 
 ---
 
-## 👑 Unique Factor
+## 🤝 Contribution Roles
 
-- We're not just using AI. We're *contributing* to it.
-- Makes boring data collection a dopamine rush.
-- Tailored for meme-lords, Redditors, Discord goblins, and Gen Z zombies.
-
----
-
-## 🤝 Team LLMao
-
-| Name    | Role         |
-|---------|--------------|
-| Rishi   | AI Lead + Chaos Brain 🧠⚡ |
-| Sherlyn | UX Queen + Meme Curator 💅 |
-| Mahesh  | Backend Ninja 🧱 |
-| Bhushan | Model Scorer + Bug Finder 🐞 |
-| Arshia  | Frontend Flash ⚡ |
+| Name     | Role             |
+|----------|------------------|
+| Rishi    | AI System Design, Prompt Engineering |
+| Sherlyn  | UI/UX Design, Challenge Ideation |
+| Mahesh   | Frontend Development |
+| Arshia   | Dataset Handling, User Flow Design |
+| Bhushan  | Model Integration, Backend Logic |
 
 ---
 
+## 🌍 License
 
-> Copy the repo, run `pip install -r requirements.txt`, and launch `app.py` with Streamlit. You’re live!
-
----
-
-## 📌 Final Words
-
-FillMyBlank.exe is where AI meets memes, chaos, and Gen Z energy.  
-Fun, useful, and open-source — no corporate vibes here.
+This project is licensed under **MIT**.  
+User-generated content is collected under **Creative Commons Zero (CC0)** for AI training purposes.
 
 ---
 
-> “Train your model. Entertain the people. Rule the leaderboard.”  
-— Team **LLMao**
-```
+## 🧠 Final Words
+
+This isn’t your average chatbot.  
+It’s **"FillMyBlank.exe"** — where **creativity meets chaos**, and AI learns to meme.
 
 ---

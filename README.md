@@ -81,7 +81,8 @@ We collect the following metadata along with each user submission:
   "ai_score": 8.2,
   "judge_feedback": "Nice twist! Sarcastic and relevant to the meme."
 }
-    ## 🧠 Model Usage
+```
+### 🧠 Model Usage
 
 We use Sentence Transformers to compute semantic similarity and humor scoring via cosine similarity. Responses may also be labeled and used in future fine-tuning runs (classification tasks like "Funny", "Mid", "Dead").
 

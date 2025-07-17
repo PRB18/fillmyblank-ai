@@ -1,0 +1,23 @@
+# Frontend
+streamlit==1.35.0
+
+# Backend
+flask==3.0.3
+flask-cors==4.0.0
+
+# AI & NLP
+transformers==4.42.2
+sentence-transformers==2.7.0
+torch==2.3.0
+accelerate==0.30.1
+
+# Hugging Face API Utils
+requests==2.32.3
+
+# Utility Libraries
+python-dotenv==1.0.1
+numpy==1.26.4
+pandas==2.2.2
+
+# Dev & Testing
+pytest==8.2.2

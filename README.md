@@ -2,16 +2,15 @@
 ### 🚀 By Team LLMao  
 Sherlyn, Mahesh, Bhushan, Arshia, Rishi  
 
-
 > _"An AI-Powered Challenge Arena for the Short-Attention-Span Generation."_
 
 ---
 
 ## 🎯 Project Summary
 
-**FillMyBlank.exe** is a fun, fast-paced, and socially engaging web application built for Gen-Z users who crave interactivity, humour, and competition. The platform features **a set of meme-style AI challenges** — from fill-in-the-blanks to vibe-matching and meme-completion — where users test their wit, creativity, and timing.  
+**FillMyBlank.exe** is a fun, fast-paced, and socially engaging web application built for Gen-Z users who crave interactivity, humour, and competition. The platform features **a set of meme-style AI challenges** — from fill-in-the-blanks to vibe-matching and meme-completion — where users test their wit, creativity, and timing.
 
-Our unique twist? The AI doesn't just sit back — it actively judges the responses, scores them, and adapts to user humor over time. As users play, **we collect sentence-level data** to fine-tune our open-source language model for better contextual understanding of Gen-Z tone, humor, and vibes.
+Our unique twist? The AI doesn't just sit back — it actively judges the responses, scores them, and adapts to user humor over time. As users play, **we collect sentence-level data enriched with metadata** to fine-tune our open-source language model for better contextual understanding of Gen-Z tone, humor, and vibes.
 
 ---
 
@@ -42,66 +41,78 @@ We aim to **combat attention fatigue** and make AI feel fun and approachable aga
 
 | Layer       | Tech Used |
 |-------------|-----------|
-| 👩‍🎨 Frontend   | Streamlit (for rapid prototyping), Tailwind CSS (if needed for style), HTML/CSS |
-| 🧠 AI Backend | Sentence Transformers (`all-MiniLM-L6-v2`), Open Source LLMs (e.g., `phi`, `gemma`, `mistral`, etc. as fallback for scoring/judgment) |
-| 🗃️ Data Layer  | SQLite or JSONL for collecting prompts and user responses |
-| 🚀 Hosting    | Hugging Face Spaces or Streamlit Cloud |
+| 👩‍🎨 Frontend   | Streamlit (for rapid prototyping), Tailwind CSS (if needed), HTML/CSS |
+| 🧠 AI Backend | Sentence Transformers (`all-MiniLM-L6-v2`), Open Source LLMs (`phi`, `gemma`, `mistral`) |
+| 🗃️ Data Layer  | JSONL / SQLite (for corpus and response metadata storage) |
+| 🚀 Hosting    | Hugging Face Spaces / Streamlit Cloud |
 | 🛠️ DevOps     | GitLab CI/CD, Python venv, Docker (optional) |
 
 ---
 
-## 🔐 Data Handling
+## 🔐 Data Handling & Structure
 
-We collect the following:
-- Anonymous responses per challenge (text only)
-- AI-assigned scores
-- Timestamp (optional)
+We collect the following metadata along with each user submission:
 
-This data helps us:
-- Fine-tune the AI on humor and context
-- Build a Gen-Z centric response dataset (CC0 open license)
+| Field             | Description |
+|------------------|-------------|
+| `user_id`         | Anonymous user identifier (hashed or UUID) |
+| `timestamp`       | Time of submission (UTC) |
+| `geo_coordinates` | Optional latitude and longitude (with user consent) |
+| `title`           | Title of the user-generated challenge or meme |
+| `description`     | Short description/context of the prompt |
+| `category`        | Type of challenge: `"Blank"`, `"Meme"`, or `"Vibe"` |
+| `response`        | User-submitted text |
+| `ai_score`        | AI-generated humor/context relevance score |
+| `judge_feedback`  | Qualitative feedback given by the AI |
 
----
+> Data is stored in `.jsonl` format and anonymized to protect user privacy.
 
-## 🧠 Model Usage
+### 📝 Sample Data Entry
 
-We use **Sentence Transformers** to compute semantic similarity and humor scoring via cosine similarity. Optionally, we may fine-tune using the responses as supervised classification (e.g., "Funny", "Mid", "Dead").
+```json
+{
+  "user_id": "a3d9e90e-39f3-4bb1-944c-bc14c2b1d62a",
+  "timestamp": "2025-07-17T10:24:00Z",
+  "geo_coordinates": {"lat": 17.385044, "lon": 78.486671},
+  "title": "Meme Caption: Elon at Mars",
+  "description": "Elon Musk landing on Mars meme - fill in the final dialogue",
+  "category": "Meme",
+  "response": "When you realize you left the stove on at Earth.",
+  "ai_score": 8.2,
+  "judge_feedback": "Nice twist! Sarcastic and relevant to the meme."
+}
+    ## 🧠 Model Usage
 
-All models used are **open-source** (no GPT-4 or closed APIs), following hackathon guidelines.
+We use Sentence Transformers to compute semantic similarity and humor scoring via cosine similarity. Responses may also be labeled and used in future fine-tuning runs (classification tasks like "Funny", "Mid", "Dead").
 
----
+All AI models used are fully open-source and comply with hackathon rules (no closed APIs like GPT-4).
 
-## 📈 Long-Term Vision
+📈 Long-Term Vision
 
-- Build a **public humor dataset** from anonymous user input.
-- Create a **humor-aligned small LLM** fine-tuned using HuggingFace PEFT.
-- Expand to include **multimodal inputs** (image + text caption rating).
-- Add **offline local mode** for privacy-conscious users.
+    Build a public humor dataset from anonymous user input (CC0).
 
----
+    Fine-tune a humor-aligned open-source LLM using HuggingFace PEFT.
 
-## 🤝 Contribution Roles
+    Support multimodal challenges (images + captions).
 
-| Name     | Role             |
-|----------|------------------|
-| Rishi    | AI System Design, Prompt Engineering |
-| Sherlyn  | UI/UX Design, Challenge Ideation |
-| Mahesh   | Frontend Development |
-| Arshia   | Dataset Handling, User Flow Design |
-| Bhushan  | Model Integration, Backend Logic |
+    Enable offline mode for privacy-conscious users.
 
----
+🤝 Contribution Roles
+Name	Role
+Rishi	AI System Design, Prompt Engineering
+Sherlyn	UI/UX Design, Challenge Ideation
+Mahesh	Frontend Development
+Arshia	Dataset Handling, User Flow Design
+Bhushan	Model Integration, Backend Logic
 
-## 🌍 License
+🌍 License
 
-This project is licensed under **MIT**.  
-User-generated content is collected under **Creative Commons Zero (CC0)** for AI training purposes.
+This project is licensed under the MIT License.
+User-generated content is collected under the Creative Commons Zero (CC0) license for public domain AI training purposes.
 
----
 
-## 🧠 Final Words
+🧠 Final Words
 
-This isn’t your average chatbot.  
-It’s **"FillMyBlank.exe"** — where **creativity meets chaos**, and AI learns to meme.
+This isn’t your average chatbot.
+It’s "FillMyBlank.exe" — where creativity meets chaos, and AI learns to meme.
 
----

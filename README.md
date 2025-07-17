@@ -2,15 +2,6 @@
 
 **FillMyBlank.ai** is an AI-powered web app that challenges users to complete memes, tweets, or short quotes using their creativity. The AI provides real-time feedback, scores, and even generates new challenges — combining fun, wit, and intelligence in a gamified social platform.
 
-## 🔹 Team Details
-
-- **Team Name**: LLMao  
-- **Members**:  
-  - Sherlyn  
-  - Mahesh  
-  - Bhushan  
-  - Arshia  
-  - Rishi  
 
 ## 🔹 Project Overview
 
@@ -47,6 +38,56 @@ Each prompt submitted by the community will include:
 - A **category** (e.g., humor, politics, pop culture)
 
 These inputs will be used to build an evolving, community-driven prompt corpus for future generations of FillMyBlank challenges.
+
+---
+## 🔹 Folder Structure
+
+<pre>
+
+FillMyBlank.ai/
+├── .gitignore
+├── LICENSE
+├── README.md
+├── report.md
+├── requirements.txt
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── ISSUE_TEMPLATE/
+│   ├── bug_report.md
+│   └── feature_request.md
+├── .gitlab/
+│   └── metadata.yml
+├── app/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── auth/
+│   │   ├── login.py
+│   │   └── register.py
+│   ├── challenges/
+│   │   ├── fill_in_the_blank.py
+│   │   ├── word_unscramble.py
+│   │   └── meme_caption.py
+│   ├── utils/
+│   │   ├── ai_api.py              
+│   │   └── helpers.py
+│   ├── static/
+│   │   └── styles.css
+│   └── templates/
+│       ├── index.html
+│       ├── login.html
+│       ├── dashboard.html
+│       └── challenge.html
+├── data/
+│   ├── raw/
+│   └── processed/
+├── scripts/
+│   └── data_cleaner.py
+└── docs/
+    ├── architecture_diagram.png
+    ├── er_model.png
+    └── usage_guide.md
+
+</pre>
 
 ---
 

@@ -115,5 +115,5 @@ User-generated content is collected under the Creative Commons Zero (CC0) licens
 🧠 Final Words
 
 This isn’t your average chatbot.
-It’s "FillMyBlank.exe" — where creativity meets chaos, and AI learns to meme.
+It’s "FillMyBlank.ai" — where creativity meets chaos, and AI learns to meme.
 

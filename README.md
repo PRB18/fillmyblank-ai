@@ -2,15 +2,6 @@
 
 **FillMyBlank.ai** is an AI-powered web app that challenges users to complete memes, tweets, or short quotes using their creativity. The AI provides real-time feedback, scores, and even generates new challenges — combining fun, wit, and intelligence in a gamified social platform.
 
-## 🔹 Team Details
-
-- **Team Name**: LLMao  
-- **Members**:  
-  - Sherlyn  
-  - Mahesh  
-  - Bhushan  
-  - Arshia  
-  - Rishi  
 
 ## 🔹 Project Overview
 

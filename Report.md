@@ -1,5 +1,3 @@
-
-
 ### FillMyBlank.ai Project Report
 
 > Team: **LLMao**

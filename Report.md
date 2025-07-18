@@ -115,7 +115,7 @@ Model Plans:
 
 ---
 
-## 🧾 6. Problem Understanding & MVP Elegance
+##  6. Problem Understanding & MVP Elegance
 
 **Problem:**
 LLMs don’t get Indian humor, meme context, or sarcastic tone. They miss the vibe.

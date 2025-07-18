@@ -1,148 +1,179 @@
-### FillMyBlank.ai Project Report
+# FillMyBlank.ai – Final Project Report
 
-> Team: **LLMao**
-> Members: Rishi, Sherlyn, Mahesh, Bhushan, Arshia
-> App: **FillMyBlank.ai**
-
-
-
-### 1. Project Overview
-
-**FillMyBlank.ai** is an AI-powered web application that offers interactive challenges like:
-
-* Meme-based fill-in-the-blank quizzes
-* Contextual wordplay puzzles
-* Sarcastic reply prediction
-* Conversational trolling & wit-based games
-
-The core idea is to collect engaging user-generated data through fun challenges to improve LLM fine-tuning in Indian English and Gen Z slang.
+**Team:** LLMao
+**Members:** Rishi, Sherlyn, Mahesh, Bhushan, Arshia
+**App:** FillMyBlank.ai
 
 ---
 
-### 2. Motivation
+##  1. User Acquisition & Growth Strategy (Primary Metric)
 
-Current LLMs lack regional humor, sarcasm understanding, and meme context. Our app aims to crowdsource diverse, culturally rich, and funny data that can improve chatbots' sense of humor, meme literacy, and vibe matching.
+**Goal:** Reach 500+ real users in 2 weeks, generate 1k+ high-quality humorous/cultural data points.
+**Plan:**
 
----
+* **Phase 1: Soft Launch (Week 1)**
 
-### 3. Target Output / Deliverables
+  * Target college meme pages, Reddit India threads, and Discord meme communities.
+  * Incentivize responses with leaderboard-based shoutouts and a “Roast King” badge.
+  * A/B test meme formats for engagement.
 
-* A working **web app with login functionality**
-* Challenge modules (fill-in-the-blank, meme reaction, sarcasm detection)
-* Real-time data collection in JSON
-* Export mechanism for collected data
-* GitLab repo with proper issue tracking, branches, and commits
-* Full documentation with change logs and license
+* **Phase 2: Viral Push (Week 2)**
 
----
+  * Run meme-based Instagram story challenges ("Can you beat the AI at sarcasm?")
+  * Collaborate with micro-creators (\~5K–50K followers) who can demo challenges.
+  * Introduce challenge streaks to boost daily use.
 
-### 4. Features (To Be Built)
+**Measurement:**
 
-* [ ] User Login System (OAuth optional)
-* [ ] Meme-based blank-filling challenge
-* [ ] Sarcastic sentence prediction challenge
-* [ ] Leaderboard & scoring
-* [ ] Real-time feedback on AI predictions
-* [ ] Geo-coordinates collection (for regional data analysis)
-* [ ] Download/export user responses as corpus
+* Daily active users
+* Corpus points submitted
+* Engagement per module
+  *(Data collection is built-in real-time and timestamped.)*
 
 ---
 
-## 🔹 Tech Stack
+##  2. Corpus Collection by Design
 
-| Component        | Technology Used                      |
-|------------------|--------------------------------------|
-| **Frontend**      | Streamlit (Python-based UI)          |
-| **Backend**       | Python (FastAPI or Flask - planned)  |
-| **AI Model**      | OpenRouter API (OpenAI/Groq backend) |
-| **Version Control** | GitLab                              |
-| **Deployment**    | Hugging Face Spaces (or Render)      |
-| **Team Workflow** | GitLab Issues, Commits, Merge Requests |
+**Core Mechanism:** Users *must* generate creative text (meme replies, sarcasm completions, witty roast lines) to play the game.
+**Every challenge is a disguised data annotation task.**
+We collect:
 
----
+* Indian English + Gen Z slang
+* Sarcasm & humor context
+* Meme logic and inference
+* Timestamped and categorized submissions
 
-### 6. Geo Coordinates (Planned)
+**Corpus Quality Enhancers:**
 
-* We plan to collect **basic location info** (city, state) using browser geolocation API.
-* This helps in regional language processing and understanding humor across zones.
+* Optional meme image + user location for contextual accuracy
+* Real-time AI feedback encourages users to “correct” or “improve” data
 
 ---
 
-### 7. Corpus Categories (Planned)
+##  3. Accessibility & Performance
 
-* Meme replies
-* Fill-in-the-blanks
-* Sarcasm completion
-* Roast & banter responses
-* Desi-English humor
+**Low-bandwidth First:**
 
-Each user submission is categorized and timestamped.
+* Built using **Streamlit** for fast mobile web delivery
+* Lightweight backend via FastAPI
+* Minimal external asset usage (CDNs avoided where possible)
 
----
+**Offline Planning (In Progress):**
 
-### 8. GitLab Usage
+* LocalStorage fallback for unsent submissions
+* Graceful retry logic when internet returns
+* Designed to run on mobile browsers with poor connectivity
 
-* Multiple branches for frontend, backend, and challenge modules
-* Merge Requests used for collaboration
-* Issues created for each feature/bug
-* Commits linked to tasks (following best practices)
+**Accessibility:**
 
----
-
-### 9. API Strategy
-
-* Only **open-source AI APIs** will be used (e.g., Hugging Face transformers)
-* We avoid using proprietary APIs like OpenAI
-* Plan to integrate pre-trained text-generation models (like `tiiuae/falcon`, `mistralai/Mistral-7B`, etc.)
+* Text-based input only
+* Screen-reader friendly layout (Streamlit default)
+* No login required to try core modules (login only for leaderboard)
 
 ---
 
-### 10. Future Roadmap
+##  4. Team Collaboration Under Pressure
 
-* [ ] Fine-tune collected data into a humorous LLM (FillMyBlankGPT)
-* [ ] Build an open-source dataset
-* [ ] Add voice/mic input and meme uploads
+**Sprint Timeline:**
 
----
+| Week     | Focus              | Output                                                    |
+| -------- | ------------------ | --------------------------------------------------------- |
+| Week 1   | Ideation + MVP Dev | App base setup, first challenge module                    |
+| Week 2   | Testing + Growth   | User feedback loop, frontend polish, deployment           |
+| Week 3-4 | Campaign           | Meme push, daily challenge rotation, analytics collection |
 
-### 11. Current Status
+**Workflow:**
 
-Project is in ideation & setup phase.
+* GitLab Issues used to track every task
+* Commits + MRs mapped to specific issues
+* Daily updates on group chat + progress sync
+* Clear division:
 
-* Team setup ✅
-* Repo initialized ✅
-* Readme prepared ✅
-* Roles divided 🔜
-* First branch (`login-page`) will be created by Rishi
-
----
-
-### 12. Changelog
-
-See [`CHANGELOG.md`](./CHANGELOG.md)
-
----
-
-### 13. Contributing
-
-See [`CONTRIBUTING.md`](./CONTRIBUTING.md)
+  * Rishi – Frontend
+  * Sherlyn – AI model integration
+  * Mahesh – Backend + Deployment
+  * Bhushan – UI + Testing
+  * Arshia – Content + Growth
 
 ---
 
-### 14. License
+##  5. AI Integration & Open-Source Adherence
 
-See [`LICENSE`](./LICENSE)
+**Strictly Open-Source Policy:**
+No proprietary APIs used.
+Model Plans:
+
+* `tiiuae/falcon-7b`
+* `mistralai/Mistral-7B-Instruct`
+* Hugging Face Inference API used (self-hosted fallback planned)
+
+**AI Usage in MVP:**
+
+* Predicts sarcasm completion
+* Ranks humor intensity
+* Feedback loop improves user interaction *and* enhances data variety
 
 ---
 
-### 15. Meta Info
+## 🧾 6. Problem Understanding & MVP Elegance
 
-**Geo Coordinates**: Will be collected via browser
-**User Info**: Email, city, username (optional)
-**Corpus Categories**: Humor, memes, sarcasm, roasts
-**Input Format**: Text (plus optional meme img for context)
-**Output Format**: JSON dataset
+**Problem:**
+LLMs don’t get Indian humor, meme context, or sarcastic tone. They miss the vibe.
+
+**Our Solution:**
+Turn data collection into a fun, addictive game that *naturally* generates culturally rich, Gen Z-friendly data.
+
+**Why It Works:**
+
+* No boring data annotation forms
+* No forced user behavior
+* App = Game = Data
 
 ---
 
+##  7. Report & Demo Quality
 
+* **Live App Demo:** \[Hugging Face Space link – TBD]
+* **Repo:** [GitLab – FillMyBlank.ai](#)
+* **Docs:**
+
+  * `README.md` – Full setup
+  * `CHANGELOG.md` – Detailed commits
+  * `CONTRIBUTING.md` – Guidelines
+  * `LICENSE` – Open-source MIT
+* **Demo Video:** \[YouTube link – TBD]
+
+---
+
+##  8. Post-Internship Vision
+
+* **FillMyBlankGPT:** Fine-tune a lightweight LLM purely on Gen Z + Indian meme humor.
+* **Open Corpus Release:** Community-curated humor dataset for downstream LLM research.
+* **Scale Up:**
+
+  * Add audio input (sarcastic voice tones)
+  * Meme image generation from replies
+  * Challenge-of-the-day via WhatsApp bot
+
+---
+
+##  9. Current Status (as of Week 1)
+
+| Component                          | Status                             |
+| ---------------------------------- | ---------------------------------- |
+| Repo Setup                         | ✅                                 |
+| Roles Assigned                     | ✅                                 |
+| Frontend (Login + First Challenge) | 🚧                                 |
+| Backend API                        | 🚧                                 |
+| Deployment                         | 🚧                                  |
+| Growth Campaign Prep               | ✅ (planned posts and assets ready) |
+
+---
+
+##  10. Meta Info
+
+* **Geo Coordinates:** City + state via browser (opt-in)
+* **User Info:** Email (optional), username
+* **Corpus Categories:** Sarcasm, memes, roasts, blanks
+* **Input Format:** Text (optional meme img)
+* **Output Format:** Timestamped JSON

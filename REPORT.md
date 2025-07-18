@@ -1,5 +1,7 @@
 # FillMyBlank.ai – Final Project Report
 
+---
+
 **Team:** LLMao
 **Members:** Rishi, Sherlyn, Mahesh, Bhushan, Arshia
 **App:** FillMyBlank.ai

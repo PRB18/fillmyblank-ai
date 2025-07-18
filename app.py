@@ -82,6 +82,14 @@ prompt = get_random_prompt()
 st.write(f"**{prompt['title']}**")
 st.info(prompt['text'])
 
+def load_custom_css():
+    with open("frontend/styling/style.css") as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+# Call it before any render functions
+load_custom_css()
+
+
 user_input = st.text_input("Your Response:", placeholder="Type your witty/funny reply here...")
 
 if st.button("Submit"):

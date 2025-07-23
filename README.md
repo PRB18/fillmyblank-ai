@@ -173,5 +173,4 @@ This project is licensed under **MIT License**. See `LICENSE.md` for full detail
 - A public URL will be shared here once the app is live.
 
 ---
-
 >This README represents our current vision and implementation plan for FillMyBlank.ai, submitted as part of the hackathon project under Swecha/WikiVerse.

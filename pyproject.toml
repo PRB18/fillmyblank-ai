@@ -9,7 +9,11 @@ description = "A multilingual language learning app with interactive games and A
 readme = "README.md"
 license = {text = "AGPL-3.0"}
 authors = [
-    {name = "Your Name", email = "your.email@example.com"}
+    {name = "Rishi", email = "rishi@fillmyblank.ai"},
+    {name = "Arshia", email = "arshia@fillmyblank.ai"},
+    {name = "Sherlyn", email = "sherlyn@fillmyblank.ai"},
+    {name = "Mahesh", email = "mahesh@fillmyblank.ai"},
+    {name = "Bhushan", email = "bhushan@fillmyblank.ai"}
 ]
 keywords = ["language-learning", "streamlit", "ai", "multilingual", "education"]
 classifiers = [

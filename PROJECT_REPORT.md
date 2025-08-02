@@ -10,7 +10,15 @@
 
 ## Executive Summary
 
-FillMyBlank.AI is an innovative language learning platform that combines interactive games with AI-powered features to create an engaging educational experience. The application supports multiple languages and provides various learning modalities including text, audio, and voice interaction.
+FillMyBlank.AI is an innovative language learning platform developed by a collaborative team of five developers. The application combines interactive games with AI-powered features to create an engaging educational experience. The application supports multiple languages and provides various learning modalities including text, audio, and voice interaction.
+
+## Development Team
+
+- **Rishi** - Project Lead & Architecture - Led overall project design and AI integration
+- **Arshia** - Frontend Developer & UI/UX Designer - Created intuitive user interfaces and responsive design
+- **Sherlyn** - Backend Developer & Data Management - Implemented user authentication and data processing
+- **Mahesh** - AI/ML Engineer - Developed language processing and voice recognition features
+- **Bhushan** - Quality Assurance & Testing - Ensured application reliability and performance
 
 ## Key Features Implemented
 

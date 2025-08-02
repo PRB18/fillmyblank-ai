@@ -15,9 +15,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2024-XX-XX
 
 ### Added
-- Initial release of FillMyBlank.AI
-- Streamlit-based web application
-- User authentication system with bcrypt
+- Initial release of FillMyBlank.AI by development team
+- Streamlit-based web application (Arshia - Frontend)
+- User authentication system with bcrypt (Sherlyn - Backend)
 - Multiple language learning games:
   - Fill in the blank exercises
   - Matching games

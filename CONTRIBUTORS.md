@@ -5,21 +5,32 @@ Thank you to all the people who have contributed to FillMyBlank.AI!
 ## Core Team
 
 ### Project Maintainers
-- **[Your Name]** - Project Lead & Main Developer
-  - Email: your.email@example.com
-  - GitHub: @yourusername
+- **Rishi** - Project Lead & Main Developer
   - Role: Architecture, AI Integration, Game Development
+- **Arshia** - Frontend Developer & UI/UX Designer
+  - Role: Streamlit Interface, User Experience Design
+- **Sherlyn** - Backend Developer & Data Management
+  - Role: Data Processing, CSV Management, User Authentication
+- **Mahesh** - AI/ML Engineer
+  - Role: Language Processing, Voice Recognition, AI Integration
+- **Bhushan** - Quality Assurance & Testing
+  - Role: Testing, Bug Fixes, Performance Optimization
 
 ## Contributors
 
 ### Code Contributors
-<!-- Add contributors as they join the project -->
-- **[Contributor Name]** - Feature contributions
-- **[Contributor Name]** - Bug fixes and improvements
+- **Rishi** - Core application architecture and AI integration
+- **Arshia** - Streamlit UI components and responsive design
+- **Sherlyn** - User authentication system and data management
+- **Mahesh** - Speech recognition and language processing features
+- **Bhushan** - Testing framework and quality assurance
 
 ### Documentation Contributors
-- **[Your Name]** - Initial documentation setup
-- **[Contributor Name]** - Documentation improvements
+- **Rishi** - Project documentation and deployment guides
+- **Arshia** - User interface documentation and design specs
+- **Sherlyn** - API documentation and data schema
+- **Mahesh** - AI/ML model documentation
+- **Bhushan** - Testing documentation and quality guidelines
 
 ### Translation Contributors
 <!-- For multilingual support -->

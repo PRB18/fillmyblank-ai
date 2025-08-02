@@ -1,6 +1,13 @@
 # FillMyBlank.AI - Multilingual Language Learning App
 
-A Streamlit-based multilingual language learning application with interactive games and AI-powered features.
+A collaborative Streamlit-based multilingual language learning application with interactive games and AI-powered features.
+
+**Developed by Team:**
+- **Rishi** - Project Lead & Architecture
+- **Arshia** - Frontend & UI/UX Design  
+- **Sherlyn** - Backend & Data Management
+- **Mahesh** - AI/ML Engineering
+- **Bhushan** - Quality Assurance & Testing
 
 ## 🚀 Features
 

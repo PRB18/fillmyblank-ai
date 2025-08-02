@@ -1,0 +1,59 @@
+{
+    "en": {
+      "fill_in_blank": [
+        {"prompt": "The capital of France is ____.", "answer": "Paris"},
+        {"prompt": "She ____ going to the market.", "answer": "is"}
+      ],
+      "match_the_following": [
+        {
+          "left": ["Cat", "Dog", "Cow"],
+          "right": ["Meows", "Barks", "Moos"],
+          "answer": [0, 1, 2]
+        }
+      ],
+      "story_completion": [
+        {
+          "story": "Once upon a time, a little boy found a ___ in the garden.",
+          "answer": "puppy"
+        }
+      ]
+    },
+    "hi": {
+      "fill_in_blank": [
+        {"prompt": "भारत की राजधानी ____ है।", "answer": "दिल्ली"},
+        {"prompt": "वह बाजार ____ जा रही है।", "answer": "में"}
+      ],
+      "match_the_following": [
+        {
+          "left": ["बिल्ली", "कुत्ता", "गाय"],
+          "right": ["म्याऊँ", "भौंकता है", "रंभाती है"],
+          "answer": [0, 1, 2]
+        }
+      ],
+      "story_completion": [
+        {
+          "story": "एक बार की बात है, एक छोटा लड़का बगीचे में ___ ढूंढता है।",
+          "answer": "कुत्ता"
+        }
+      ]
+    },
+    "te": {
+      "fill_in_blank": [
+        {"prompt": "భారతదేశ రాజధాని ____.", "answer": "దిల్లీ"},
+        {"prompt": "ఆమె మార్కెట్ కి ____ వెళుతుంది.", "answer": "వెళుతుంది"}
+      ],
+      "match_the_following": [
+        {
+          "left": ["పిల్లి", "కుక్క", "ఆవు"],
+          "right": ["నవ్వుతుంది", "మొరుగుతుంది", "అంబిస్తుంది"],
+          "answer": [0, 1, 2]
+        }
+      ],
+      "story_completion": [
+        {
+          "story": "ఒకప్పుడు ఒక చిన్న బాబు తోటలో ___ కనుగొన్నాడు.",
+          "answer": "పిల్లి"
+        }
+      ]
+    }
+  }

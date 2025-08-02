@@ -1,0 +1,9 @@
+*.pyc
+__pycache__/
+responses.csv
+leaderboard.csv
+feedback.csv
+users.csv
+*.wav
+.env
+secrets.toml

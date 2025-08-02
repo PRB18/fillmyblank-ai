@@ -1,0 +1,11 @@
+streamlit>=1.31.0
+streamlit-js-eval
+speechrecognition
+pydub
+soundfile
+transformers
+sentence-transformers
+indic-transliteration
+pandas
+bcrypt
+requests

@@ -1,11 +1,12 @@
 streamlit>=1.31.0
 streamlit-js-eval
-speechrecognition
-pydub
-soundfile
-transformers
-sentence-transformers
-indic-transliteration
 pandas
 bcrypt
 requests
+# Lighter alternatives for AI features
+# transformers  # Comment out heavy ML libs for now
+# sentence-transformers  # Comment out heavy ML libs for now
+# speechrecognition  # Comment out audio libs for now
+# pydub  # Comment out audio libs for now
+# soundfile  # Comment out audio libs for now
+# indic-transliteration  # Comment out for now

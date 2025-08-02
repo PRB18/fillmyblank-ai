@@ -1,4 +1,0 @@
-streamlit
-soundfile
-streamlit-mic-recorder
-

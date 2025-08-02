@@ -3,11 +3,13 @@
     "python.linting.enabled": true,
     "python.linting.ruffEnabled": true,
     "python.formatting.provider": "black",
-    "python.formatting.blackArgs": ["--line-length=88"],
+    "python.formatting.blackArgs": [
+        "--line-length=88"
+    ],
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-        "source.organizeImports": true,
-        "source.fixAll.ruff": true
+        "source.organizeImports": "explicit",
+        "source.fixAll.ruff": "explicit"
     },
     "files.exclude": {
         "**/__pycache__": true,
@@ -27,6 +29,8 @@
     "files.associations": {
         "*.toml": "toml"
     },
-    "editor.rulers": [88],
+    "editor.rulers": [
+        88
+    ],
     "python.analysis.typeCheckingMode": "basic"
 }

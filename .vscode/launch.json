@@ -3,7 +3,7 @@
     "configurations": [
         {
             "name": "Python: Streamlit App",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}/venv/Scripts/streamlit.exe",
             "args": [
@@ -21,7 +21,7 @@
         },
         {
             "name": "Python: Current File",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
@@ -29,7 +29,7 @@
         },
         {
             "name": "Python: Debug Tests",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
             "module": "pytest",
             "args": [

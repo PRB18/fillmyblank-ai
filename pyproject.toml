@@ -1,7 +1,0 @@
-[tool.ruff]
-line-length = 88
-target-version = "py310"
-exclude = ["venv", "frontend/assets", "tests/tmp"]
-
-[tool.black]
-line-length = 88

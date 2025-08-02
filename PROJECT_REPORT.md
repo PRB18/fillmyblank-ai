@@ -7,6 +7,7 @@
 **Technology Stack:** Python, Streamlit, AI/ML  
 **Status:** Active Development  
 **License:** AGPL-3.0  
+**Live Demo:** [FillMyBlank.AI on Streamlit](https://fillmyblank-ai-efzagqpwaqeikkfteeebx3.streamlit.app/)
 
 ## Executive Summary
 

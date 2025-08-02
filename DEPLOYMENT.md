@@ -2,7 +2,23 @@
 
 This guide covers multiple deployment options for FillMyBlank.AI.
 
-## 🚀 Railway Deployment (Recommended)
+## 🚀 Current Deployment
+
+The application is currently deployed on **Streamlit Community Cloud**:
+
+🔗 [FillMyBlank.AI Live Demo](https://fillmyblank-ai-efzagqpwaqeikkfteeebx3.streamlit.app/)
+
+### Deployment Details
+- **Platform**: Streamlit Community Cloud
+- **Status**: Live
+- **Last Updated**: August 2025
+- **Branch**: `main`
+
+For other deployment options, see below.
+
+## 🚀 Alternative Deployment Options
+
+### Railway Deployment
 
 Railway is the easiest and most reliable option for deploying your Streamlit app.
 

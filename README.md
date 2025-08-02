@@ -2,6 +2,11 @@
 
 A collaborative Streamlit-based multilingual language learning application with interactive games and AI-powered features.
 
+## 🌐 Live Demo
+
+Try out the application here: [FillMyBlank.AI Live Demo](https://fillmyblank-ai-efzagqpwaqeikkfteeebx3.streamlit.app/)
+
+
 **Developed by Team:**
 - **Rishi** - Project Lead & Architecture
 - **Arshia** - Frontend & UI/UX Design  
